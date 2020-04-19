@@ -4,7 +4,13 @@ class Pending extends Component {
   render() {
     return (
       <div className="border" style={{ width: 400, borderRadius: 5 }}>
-        <div style={{ width: 200, display: "inline-block" }}>
+        <div
+          style={{
+            width: 200,
+            display: "inline-block",
+            wordBreak: "break-all",
+          }}
+        >
           <span className=" p-1 ">{this.props.content}</span>
         </div>
         <button

@@ -11,7 +11,13 @@ class Completed extends Component {
           backgroundColor: "rgba(0,200,0,0.5)",
         }}
       >
-        <div style={{ width: 200, display: "inline-block" }}>
+        <div
+          style={{
+            width: 200,
+            display: "inline-block",
+            wordBreak: "break-all",
+          }}
+        >
           <span className=" p-1 ">{this.props.content}</span>
         </div>
 
